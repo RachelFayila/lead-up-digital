@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages - Rachel Fayila</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leadup-gray': '#1F2937',
+                        'leadup-indigo': '#4F46E5',
+                        'leadup-yellow': '#FBBF24',
+                        'leadup-light': '#E5E7EB'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-white text-leadup-gray">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">RF</span>
+                    </div>
+                    <span class="text-xl font-bold text-leadup-gray">Rachel<span class="text-leadup-indigo">Fayila</span></span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo">Accueil</a>
+                    <a href="services.html" class="font-medium hover:text-leadup-indigo">Compétences</a>
+                    <a href="about.html" class="font-medium hover:text-leadup-indigo">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo">Projets</a>
+                    <a href="testimonials.html" class="font-medium text-leadup-indigo">Témoignages</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo">Contact</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700">Contactez-moi</a>
+                </div>
+                
+                <button id="menuBtn" class="md:hidden text-leadup-gray">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo py-2">Accueil</a>
+                    <a href="services.html" class="font-medium hover:text-leadup-indigo py-2">Compétences</a>
+                    <a href="about.html" class="font-medium hover:text-leadup-indigo py-2">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo py-2">Projets</a>
+                    <a href="testimonials.html" class="font-medium text-leadup-indigo py-2">Témoignages</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo py-2">Contact</a>
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium text-center">Contactez-moi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Témoignages -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-leadup-indigo/5 to-leadup-yellow/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Projets & Réalisations<span class="text-leadup-indigo">.</span></h1>
+                <p class="text-xl text-gray-600">
+                    Découvrez mes projets de développement web et les solutions digitales que j'ai créées.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques GitHub -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-leadup-indigo mb-2">13</div>
+                    <div class="text-gray-600">Projets réalisés</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-leadup-indigo mb-2">4+</div>
+                    <div class="text-gray-600">Projets majeurs</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-leadup-indigo mb-2">5</div>
+                    <div class="text-gray-600">Collaborations</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-leadup-indigo mb-2">HTML/CSS</div>
+                    <div class="text-gray-600">Technologies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Mes Projets de Développement</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Lead Up Digital -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-400 to-cyan-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            LD
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Lead Up Digital</h3>
+                            <p class="text-gray-600">HTML • CSS • JavaScript • Tailwind</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Site web d'agence digitale avec design moderne. Présentation de services, portfolio et témoignages clients. Design responsive et interface utilisateur intuitive.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">Agence digitale</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-laptop-code mr-1"></i> Projet web complet
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Web Erick Ngeleka -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            EN
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Portfolio Erick Ngeleka</h3>
+                            <p class="text-gray-600">HTML • CSS • Portfolio • Personnalisé</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Portfolio personnalisé pour un développeur. Présentation de compétences, projets et expériences professionnelles avec design sur mesure.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">portfolio-web-erick-ngeleka</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-user-tie mr-1"></i> Portfolio professionnel
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Web Fayila -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-green-400 to-teal-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            PF
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Portfolio Web Fayila</h3>
+                            <p class="text-gray-600">HTML • CSS • JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Mon portfolio personnel présentant mon parcours, compétences et projets en développement web. Design moderne et responsive.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">portfolio-web-fayila</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-briefcase mr-1"></i> Vitrine personnelle
+                        </div>
+                    </div>
+                </div>
+
+                <!-- X/Twitter Clone -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            XC
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">X/Twitter Clone</h3>
+                            <p class="text-gray-600">HTML • CSS • JS • JSON Server</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Clone fonctionnel de Twitter avec frontend en HTML/CSS/JS et backend JSON Server. Gère utilisateurs, posts, notifications et tendances.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">x-twitter-clone</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-comments mr-1"></i> Réseau social
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tableau de bord High-Tech -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-red-400 to-pink-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            TD
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Tableau de bord High-Tech</h3>
+                            <p class="text-gray-600">HTML • Dashboard • Analytics</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Tableau de bord dark business hi-tech pour suivi d'activités et visualisation de performances d'une plateforme technologique innovante.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">dark-business-hi-tech-dashboard</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-chart-line mr-1"></i> Dashboard analytique
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FayilaWax Store -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-400 to-blue-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            FW
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">FayilaWax Store</h3>
+                            <p class="text-gray-600">E-commerce • Pagne • Boutique</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Boutique en ligne spécialisée dans la vente de pagnes africains. Interface utilisateur intuitive et catalogue produits organisé.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">fayilawax-store</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-shopping-cart mr-1"></i> E-commerce
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mini Boutique -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-emerald-400 to-green-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            MB
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Mini Boutique</h3>
+                            <p class="text-gray-600">E-commerce • Démo • Learning</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Projet de mini boutique e-commerce pour pratiquer les concepts de développement web frontend et gestion de produits.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">mini-boutique</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-store mr-1"></i> Projet d'apprentissage
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Collaboratif -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            SC
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Site Collaboratif</h3>
+                            <p class="text-gray-600">Git • Collaboration • Projet groupe</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Projet collaboratif pour apprendre Git et travailler en équipe sur le développement web. Coordination avec d'autres développeurs.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">site-collaboratif</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-users-cog mr-1"></i> Travail d'équipe
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EcoCarbon -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            EC
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">EcoCarbon</h3>
+                            <p class="text-gray-600">Écologie • Développement durable • HTML</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-600">
+                            Projet écologique axé sur le développement durable et les technologies vertes. Solution digitale pour sensibiliser à l'environnement.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="text-sm text-gray-500 mb-2">EcoCarbon</div>
+                        <div class="text-sm text-leadup-indigo">
+                            <i class="fas fa-leaf mr-1"></i> Projet écologique
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mes Objectifs -->
+    <section class="py-16 bg-leadup-indigo text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Mes Objectifs de Développement</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Développement Frontend</h3>
+                    <p>Maîtriser les technologies modernes pour créer des interfaces utilisateur intuitives et performantes.</p>
+                </div>
+                
+                <div class="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Collaboration</h3>
+                    <p>Travailler efficacement en équipe sur des projets complexes en utilisant Git et les méthodologies agiles.</p>
+                </div>
+                
+                <div class="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Projets Innovants</h3>
+                    <p>Développer des solutions digitales innovantes qui répondent aux besoins réels des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Utilisées -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technologies Maîtrisées</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="h-24 bg-leadup-light rounded-lg flex flex-col items-center justify-center p-4">
+                    <i class="fab fa-html5 text-orange-500 text-3xl mb-2"></i>
+                    <span class="font-bold text-gray-700">HTML5</span>
+                </div>
+                <div class="h-24 bg-leadup-light rounded-lg flex flex-col items-center justify-center p-4">
+                    <i class="fab fa-css3-alt text-blue-500 text-3xl mb-2"></i>
+                    <span class="font-bold text-gray-700">CSS3</span>
+                </div>
+                <div class="h-24 bg-leadup-light rounded-lg flex flex-col items-center justify-center p-4">
+                    <i class="fab fa-js-square text-yellow-500 text-3xl mb-2"></i>
+                    <span class="font-bold text-gray-700">JavaScript</span>
+                </div>
+                <div class="h-24 bg-leadup-light rounded-lg flex flex-col items-center justify-center p-4">
+                    <i class="fab fa-git-alt text-red-500 text-3xl mb-2"></i>
+                    <span class="font-bold text-gray-700">Git</span>
+                </div>
+                <div class="h-24 bg-leadup-light rounded-lg flex flex-col items-center justify-center p-4">
+                    <i class="fas fa-palette text-purple-500 text-3xl mb-2"></i>
+                    <span class="font-bold text-gray-700">UI Design</span>
+                </div>
+                <div class="h-24 bg-leadup-light rounded-lg flex flex-col items-center justify-center p-4">
+                    <i class="fas fa-mobile-alt text-green-500 text-3xl mb-2"></i>
+                    <span class="font-bold text-gray-700">Responsive</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kadea Academy -->
+    <section class="py-16 bg-gradient-to-r from-leadup-indigo to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center mb-6">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mr-0 md:mr-6 mb-4 md:mb-0">
+                    <span class="text-leadup-indigo font-bold text-2xl">KA</span>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Kadea Academy</h2>
+                    <p class="text-xl mt-2">Formation en développement web</p>
+                </div>
+            </div>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Membre actif de la communauté Kadea Academy, développant des compétences en développement web à travers des projets concrets et collaboratifs.
+            </p>
+            <div class="inline-flex items-center bg-white/20 px-6 py-3 rounded-lg">
+                <i class="fas fa-graduation-cap mr-3"></i>
+                <span>Formation intensive en développement web</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-leadup-gray text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">RF</span>
+                        </div>
+                        <span class="text-xl font-bold">Rachel<span class="text-leadup-yellow">Fayila</span></span>
+                    </a>
+                    <p class="text-leadup-light mb-6">
+                        Développeuse web passionnée, créant des solutions digitales innovantes avec une approche centrée utilisateur.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-leadup-light hover:text-leadup-yellow">Accueil</a></li>
+                        <li><a href="services.html" class="text-leadup-light hover:text-leadup-yellow">Compétences</a></li>
+                        <li><a href="portfolio.html" class="text-leadup-light hover:text-leadup-yellow">Projets</a></li>
+                        <li><a href="contact.html" class="text-leadup-light hover:text-leadup-yellow">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Mes Compétences</h3>
+                    <ul class="space-y-2 text-leadup-light">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-2 text-sm"></i>
+                            <span>Développement Frontend</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-2 text-sm"></i>
+                            <span>Design Responsive</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-2 text-sm"></i>
+                            <span>Gestion de Projets</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">rachel.fayila@email.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">Kadea Academy</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-10 pt-6 text-center text-leadup-light">
+                <p>&copy; <span id="currentYear"></span> Rachel Fayila. Tous droits réservés.</p>
+                <p class="text-sm mt-2">Développeuse web • 13 projets réalisés • Formation Kadea Academy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Année actuelle dans le footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
