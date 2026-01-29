@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadUp Digital - Transformation Digitale pour Entrepreneurs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leadup-gray': '#1F2937',
+                        'leadup-indigo': '#4F46E5',
+                        'leadup-yellow': '#FBBF24',
+                        'leadup-light': '#E5E7EB'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'scale': 'scale 0.3s ease-in-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        scale: {
+                            '0%': { transform: 'scale(1)' },
+                            '100%': { transform: 'scale(1.05)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1F2937 0%, #4F46E5 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-poppins bg-white text-leadup-gray">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">LD</span>
+                    </div>
+                    <span class="text-xl font-bold text-leadup-gray">LeadUp<span class="text-leadup-indigo">Digital</span></span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo transition-colors">Accueil</a>
+                    <a href="services.html" class="font-medium hover:text-leadup-indigo transition-colors">Services</a>
+                    <a href="about.html" class="font-medium hover:text-leadup-indigo transition-colors">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo transition-colors">Portfolio</a>
+                    <a href="testimonials.html" class="font-medium hover:text-leadup-indigo transition-colors">Témoignages</a>
+                    <a href="blog.html" class="font-medium hover:text-leadup-indigo transition-colors">Blog</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo transition-colors">Contact</a>
+                </div>
+                
+                <!-- CTA Desktop -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors">Devis gratuit</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-leadup-gray">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo transition-colors py-2">Accueil</a>
+                    <a href="services.html" class="font-medium hover:text-leadup-indigo transition-colors py-2">Services</a>
+                    <a href="about.html" class="font-medium hover:text-leadup-indigo transition-colors py-2">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo transition-colors py-2">Portfolio</a>
+                    <a href="testimonials.html" class="font-medium hover:text-leadup-indigo transition-colors py-2">Témoignages</a>
+                    <a href="blog.html" class="font-medium hover:text-leadup-indigo transition-colors py-2">Blog</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo transition-colors py-2">Contact</a>
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium text-center hover:bg-indigo-700 transition-colors">Devis gratuit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 text-shadow">
+                        Votre transformation digitale<span class="text-leadup-yellow">.</span>
+                    </h1>
+                    <p class="text-xl text-leadup-light mb-8">
+                        LeadUp Digital accompagne les entrepreneurs et dirigeants dans leur transition digitale avec des solutions sur mesure et une stratégie adaptée.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="contact.html" class="bg-leadup-yellow text-leadup-gray font-bold px-8 py-3 rounded-lg text-center hover:bg-yellow-400 transition-colors animate-pulse">
+                            Demander un devis <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="services.html" class="bg-transparent border-2 border-white text-white font-medium px-8 py-3 rounded-lg text-center hover:bg-white hover:text-leadup-indigo transition-colors">
+                            Découvrir nos services
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-leadup-yellow/20 rounded-full flex items-center justify-center">
+                            <div class="w-56 h-56 md:w-72 md:h-72 bg-leadup-indigo/20 rounded-full flex items-center justify-center">
+                                <div class="w-48 h-48 md:w-64 md:h-64 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                    <i class="fas fa-rocket text-white text-6xl md:text-8xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 bg-white p-4 rounded-lg shadow-lg animate-bounce">
+                            <div class="text-leadup-indigo font-bold text-xl">+85%</div>
+                            <div class="text-sm">de visibilité</div>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 bg-leadup-yellow p-4 rounded-lg shadow-lg animate-bounce" style="animation-delay: 0.2s">
+                            <div class="text-leadup-gray font-bold text-xl">+60%</div>
+                            <div class="text-sm">d'engagement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation CEO -->
+    <section class="py-16 bg-leadup-light/30">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden animate-slide-up">
+                <div class="md:flex">
+                    <div class="md:w-1/3 p-8 bg-leadup-indigo text-white flex flex-col justify-center">
+                        <div class="w-48 h-48 mx-auto mb-6 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
+                            <!-- Placeholder pour photo CEO -->
+                            <div class="w-full h-full bg-gradient-to-br from-white/20 to-transparent flex items-center justify-center">
+                                <i class="fas fa-user-tie text-6xl text-white/70"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Rachel Fayila</h3>
+                        <p class="text-center text-white/80 mb-4">CEO & Fondatrice</p>
+                        <div class="text-center">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-white hover:text-leadup-yellow"><i class="fab fa-linkedin text-xl"></i></a>
+                                <a href="#" class="text-white hover:text-leadup-yellow"><i class="fab fa-twitter text-xl"></i></a>
+                                <a href="#" class="text-white hover:text-leadup-yellow"><i class="fab fa-instagram text-xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-6 text-leadup-gray">Notre vision<span class="text-leadup-indigo">.</span></h2>
+                        <p class="text-lg mb-6">
+                            <span class="text-leadup-indigo font-semibold">"Digitaliser pour élever"</span> - c'est le mantra qui guide chaque projet chez LeadUp Digital. En tant qu'entrepreneure moi-même, je comprends les défis auxquels font face les jeunes dirigeants dans un monde numérique en constante évolution.
+                        </p>
+                        <p class="mb-6">
+                            Notre mission est d'accompagner les entrepreneurs, CEO et dirigeants dans leur transformation digitale, non pas comme une simple prestation de services, mais comme un véritable partenariat stratégique. Nous croyons que chaque entreprise mérite une présence digitale qui reflète sa valeur unique.
+                        </p>
+                        <p class="mb-8">
+                            À long terme, nous aspirons à créer une communauté d'entrepreneurs digitaux qui partagent, collaborent et grandissent ensemble, en faisant du digital un levier d'impact positif pour les économies africaines et au-delà.
+                        </p>
+                        <a href="about.html" class="inline-flex items-center text-leadup-indigo font-semibold hover:text-indigo-700">
+                            En savoir plus sur notre histoire
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos services<span class="text-leadup-indigo">.</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Des solutions digitales complètes pour booster votre présence en ligne et transformer votre entreprise.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition-all">
+                    <div class="w-14 h-14 bg-leadup-indigo/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-leadup-indigo text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Création de sites web</h3>
+                    <p class="text-gray-600 mb-6">
+                        Sites vitrines, e-commerce et applications web sur mesure, optimisés pour la conversion et le référencement.
+                    </p>
+                    <a href="services.html#web" class="text-leadup-indigo font-semibold hover:text-indigo-700 inline-flex items-center">
+                        En savoir plus <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition-all">
+                    <div class="w-14 h-14 bg-leadup-yellow/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-hashtag text-leadup-yellow text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Gestion des réseaux sociaux</h3>
+                    <p class="text-gray-600 mb-6">
+                        Stratégie de contenu, community management et publicités sociales pour augmenter votre engagement.
+                    </p>
+                    <a href="services.html#social" class="text-leadup-indigo font-semibold hover:text-indigo-700 inline-flex items-center">
+                        En savoir plus <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition-all">
+                    <div class="w-14 h-14 bg-leadup-indigo/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-pen-fancy text-leadup-indigo text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Production de contenu digital</h3>
+                    <p class="text-gray-600 mb-6">
+                        Articles de blog, visuels, vidéos et newsletters pour établir votre expertise et attirer votre audience.
+                    </p>
+                    <a href="services.html#content" class="text-leadup-indigo font-semibold hover:text-indigo-700 inline-flex items-center">
+                        En savoir plus <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover transition-all">
+                    <div class="w-14 h-14 bg-leadup-yellow/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-leadup-yellow text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Conseil & stratégie digitale</h3>
+                    <p class="text-gray-600 mb-6">
+                        Audit digital, plan stratégique et accompagnement personnalisé pour maximiser votre ROI digital.
+                    </p>
+                    <a href="services.html#strategy" class="text-leadup-indigo font-semibold hover:text-indigo-700 inline-flex items-center">
+                        En savoir plus <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="services.html" class="bg-leadup-indigo text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors inline-flex items-center">
+                    Voir tous nos services <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-leadup-indigo text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à transformer votre présence digitale<span class="text-leadup-yellow">?</span></h2>
+                <p class="text-xl mb-10 text-white/90">
+                    Rejoignez les dizaines d'entrepreneurs qui ont déjà accéléré leur croissance grâce à notre accompagnement stratégique.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="contact.html" class="bg-leadup-yellow text-leadup-gray font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-400 transition-colors">
+                        <i class="fas fa-calendar-check mr-2"></i> Planifier un appel
+                    </a>
+                    <a href="payment.html" class="bg-transparent border-2 border-white text-white font-medium px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-leadup-indigo transition-colors">
+                        <i class="fas fa-credit-card mr-2"></i> Paiement en ligne
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-leadup-gray text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">LD</span>
+                        </div>
+                        <span class="text-xl font-bold">LeadUp<span class="text-leadup-yellow">Digital</span></span>
+                    </a>
+                    <p class="text-leadup-light mb-6">
+                        Accompagnement stratégique pour entrepreneurs et dirigeants dans leur transformation digitale.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-leadup-indigo transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-leadup-indigo transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-leadup-indigo transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-leadup-indigo transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#web" class="text-leadup-light hover:text-leadup-yellow transition-colors">Création de sites web</a></li>
+                        <li><a href="services.html#social" class="text-leadup-light hover:text-leadup-yellow transition-colors">Gestion réseaux sociaux</a></li>
+                        <li><a href="services.html#content" class="text-leadup-light hover:text-leadup-yellow transition-colors">Production de contenu</a></li>
+                        <li><a href="services.html#strategy" class="text-leadup-light hover:text-leadup-yellow transition-colors">Conseil & stratégie</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-leadup-light hover:text-leadup-yellow transition-colors">Accueil</a></li>
+                        <li><a href="about.html" class="text-leadup-light hover:text-leadup-yellow transition-colors">À propos</a></li>
+                        <li><a href="portfolio.html" class="text-leadup-light hover:text-leadup-yellow transition-colors">Portfolio</a></li>
+                        <li><a href="testimonials.html" class="text-leadup-light hover:text-leadup-yellow transition-colors">Témoignages</a></li>
+                        <li><a href="blog.html" class="text-leadup-light hover:text-leadup-yellow transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">contact@leadupdigital.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">+33 1 23 45 67 89</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">Paris, France</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-10 pt-6 text-center text-leadup-light">
+                <p>&copy; <span id="currentYear"></span> LeadUp Digital. Tous droits réservés.</p>
+                <p class="mt-2 text-sm">
+                    <a href="#" class="hover:text-leadup-yellow transition-colors">Mentions légales</a> | 
+                    <a href="#" class="hover:text-leadup-yellow transition-colors">Politique de confidentialité</a> | 
+                    <a href="#" class="hover:text-leadup-yellow transition-colors">Conditions d'utilisation</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Menu mobile
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+        
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

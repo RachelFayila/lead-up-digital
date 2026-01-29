@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - LeadUp Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leadup-gray': '#1F2937',
+                        'leadup-indigo': '#4F46E5',
+                        'leadup-yellow': '#FBBF24',
+                        'leadup-light': '#E5E7EB'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-white text-leadup-gray">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">LD</span>
+                    </div>
+                    <span class="text-xl font-bold text-leadup-gray">LeadUp<span class="text-leadup-indigo">Digital</span></span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo">Accueil</a>
+                    <a href="services.html" class="font-medium hover:text-leadup-indigo">Services</a>
+                    <a href="about.html" class="font-medium text-leadup-indigo">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo">Portfolio</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo">Contact</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700">Devis gratuit</a>
+                </div>
+                
+                <button id="menuBtn" class="md:hidden text-leadup-gray">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo py-2">Accueil</a>
+                    <a href="services.html" class="font-medium hover:text-leadup-indigo py-2">Services</a>
+                    <a href="about.html" class="font-medium text-leadup-indigo py-2">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo py-2">Portfolio</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo py-2">Contact</a>
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium text-center">Devis gratuit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section About -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-leadup-indigo/5 to-leadup-yellow/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">À propos de nous<span class="text-leadup-indigo">.</span></h1>
+                <p class="text-xl text-gray-600">
+                    Découvrez l'histoire, la mission et les valeurs qui animent LeadUp Digital.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Histoire -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center">Notre Histoire</h2>
+                
+                <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+                    <p class="text-lg mb-6">
+                        LeadUp Digital est né d'une vision simple mais puissante : démocratiser l'excellence digitale pour les entrepreneurs et dirigeants qui veulent transformer leur entreprise.
+                    </p>
+                    <p class="mb-6">
+                        Fondée en 2020 par Rachel Fayila, notre agence s'est rapidement imposée comme un partenaire de confiance pour les entreprises en quête d'une transformation digitale réussie. Avec une approche personnalisée et des résultats concrets, nous avons accompagné plus de 50 entreprises dans leur parcours digital.
+                    </p>
+                    <p>
+                        Aujourd'hui, LeadUp Digital continue d'évoluer pour répondre aux défis du marché numérique, toujours avec la même passion pour l'innovation et l'excellence opérationnelle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-leadup-light/30">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-leadup-indigo/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-leadup-indigo text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6">Notre Mission</h3>
+                    <p class="text-gray-600 mb-4">
+                        Accompagner chaque entrepreneur et dirigeant dans sa transformation digitale avec des solutions sur mesure, efficaces et pérennes.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-leadup-yellow mr-3"></i>
+                            <span>Fournir un accompagnement personnalisé</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-leadup-yellow mr-3"></i>
+                            <span>Délivrer des résultats mesurables</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-leadup-yellow mr-3"></i>
+                            <span>Éduquer et former nos clients</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-leadup-yellow/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-leadup-yellow text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6">Notre Vision</h3>
+                    <p class="text-gray-600 mb-4">
+                        Devenir le partenaire digital de référence pour les entrepreneurs francophones, en créant une communauté d'innovation et d'excellence numérique.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-rocket text-leadup-yellow mr-3"></i>
+                            <span>Digitaliser 1000 entreprises d'ici 2025</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-rocket text-leadup-yellow mr-3"></i>
+                            <span>Créer un écosystème entrepreneurial digital</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-rocket text-leadup-yellow mr-3"></i>
+                            <span>Inspirer la prochaine génération d'entrepreneurs</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre CEO -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center">Notre Fondatrice & CEO</h2>
+                
+                <div class="bg-gradient-to-r from-leadup-indigo to-purple-600 rounded-2xl shadow-xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 p-8 flex items-center justify-center">
+                            <div class="w-48 h-48 rounded-full bg-white/20 flex items-center justify-center overflow-hidden">
+                                <div class="w-44 h-44 rounded-full bg-gradient-to-br from-white/30 to-transparent flex items-center justify-center">
+                                    <i class="fas fa-user-tie text-white text-6xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-2/3 p-8 text-white">
+                            <h3 class="text-2xl font-bold mb-4">Rachel Fayila</h3>
+                            <p class="text-white/90 mb-6">
+                                Entrepreneure passionnée par le numérique et l'innovation, Rachel a fondé LeadUp Digital avec la conviction que chaque entreprise mérite une présence digitale à la hauteur de son ambition.
+                            </p>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-bold mb-3">Expériences clés :</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-briefcase text-leadup-yellow mr-3"></i>
+                                        <span>+8 ans d'expérience en stratégie digitale</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-graduation-cap text-leadup-yellow mr-3"></i>
+                                        <span>MBA en Management Digital</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-trophy text-leadup-yellow mr-3"></i>
+                                        <span>Prix de l'Innovation Digitale 2022</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-t border-white/20 pt-6">
+                                <h4 class="font-bold mb-3">Citation inspirante :</h4>
+                                <blockquote class="italic text-white/80 border-l-4 border-leadup-yellow pl-4">
+                                    "Le digital n'est pas une option, c'est une nécessité pour toute entreprise qui veut survivre et prospérer au 21ème siècle. Notre mission est de rendre cette transition accessible, efficace et transformative pour chaque entrepreneur."
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Valeurs -->
+    <section class="py-16 bg-leadup-light/30">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Nos Valeurs</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-leadup-indigo/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-leadup-indigo text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Confiance & Transparence</h3>
+                    <p class="text-gray-600">
+                        Nous établissons des relations basées sur la confiance mutuelle et la transparence totale dans nos processus et tarifications.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-leadup-yellow/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-leadup-yellow text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Innovation & Créativité</h3>
+                    <p class="text-gray-600">
+                        Nous repoussons les limites du possible en proposant des solutions innovantes et créatives adaptées à chaque client.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-leadup-indigo/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-leadup-indigo text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Excellence & Résultats</h3>
+                    <p class="text-gray-600">
+                        Nous nous engageons à fournir un travail d'excellence et à délivrer des résultats concrets et mesurables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-leadup-indigo text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Travaillons ensemble<span class="text-leadup-yellow">!</span></h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Découvrez comment notre approche personnalisée peut transformer votre entreprise.
+            </p>
+            <a href="contact.html" class="bg-leadup-yellow text-leadup-gray font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-400 inline-block">
+                <i class="fas fa-comments mr-2"></i> Discutons de votre projet
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-leadup-gray text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">LD</span>
+                        </div>
+                        <span class="text-xl font-bold">LeadUp<span class="text-leadup-yellow">Digital</span></span>
+                    </a>
+                    <p class="text-leadup-light mb-6">
+                        Accompagnement stratégique pour entrepreneurs et dirigeants dans leur transformation digitale.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-leadup-light hover:text-leadup-yellow">Accueil</a></li>
+                        <li><a href="services.html" class="text-leadup-light hover:text-leadup-yellow">Services</a></li>
+                        <li><a href="portfolio.html" class="text-leadup-light hover:text-leadup-yellow">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-leadup-light hover:text-leadup-yellow">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Réseaux sociaux</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-leadup-indigo">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-leadup-indigo">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-leadup-indigo">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">contact@leadupdigital.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">+33 1 23 45 67 89</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-10 pt-6 text-center text-leadup-light">
+                <p>&copy; <span id="currentYear"></span> LeadUp Digital. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

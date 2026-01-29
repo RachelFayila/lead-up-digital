@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - LeadUp Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leadup-gray': '#1F2937',
+                        'leadup-indigo': '#4F46E5',
+                        'leadup-yellow': '#FBBF24',
+                        'leadup-light': '#E5E7EB'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(79, 70, 229, 0.1);
+        }
+    </style>
+</head>
+<body class="font-poppins bg-white text-leadup-gray">
+    <!-- Navigation (identique à l'index) -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">LD</span>
+                    </div>
+                    <span class="text-xl font-bold text-leadup-gray">LeadUp<span class="text-leadup-indigo">Digital</span></span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo">Accueil</a>
+                    <a href="services.html" class="font-medium text-leadup-indigo">Services</a>
+                    <a href="about.html" class="font-medium hover:text-leadup-indigo">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo">Portfolio</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo">Contact</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700">Devis gratuit</a>
+                </div>
+                
+                <button id="menuBtn" class="md:hidden text-leadup-gray">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="font-medium hover:text-leadup-indigo py-2">Accueil</a>
+                    <a href="services.html" class="font-medium text-leadup-indigo py-2">Services</a>
+                    <a href="about.html" class="font-medium hover:text-leadup-indigo py-2">À propos</a>
+                    <a href="portfolio.html" class="font-medium hover:text-leadup-indigo py-2">Portfolio</a>
+                    <a href="contact.html" class="font-medium hover:text-leadup-indigo py-2">Contact</a>
+                    <a href="contact.html" class="bg-leadup-indigo text-white px-6 py-2 rounded-lg font-medium text-center">Devis gratuit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Services -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-leadup-indigo/5 to-leadup-yellow/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Nos Services<span class="text-leadup-indigo">.</span></h1>
+                <p class="text-xl text-gray-600">
+                    Des solutions digitales complètes pour transformer votre entreprise et accélérer votre croissance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16" id="web">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="animate-fade-in">
+                    <div class="inline-flex items-center px-4 py-2 bg-leadup-indigo/10 text-leadup-indigo rounded-full font-medium mb-4">
+                        <i class="fas fa-code mr-2"></i> Service Premium
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">Création de Sites Web</h2>
+                    <p class="text-gray-600 mb-6">
+                        Nous concevons des sites web sur mesure qui captivent votre audience et convertissent vos visiteurs en clients. Chaque site est optimisé pour le référencement et les performances.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Sites vitrines et institutionnels</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>E-commerce avec paiement sécurisé</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Applications web complexes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Optimisation SEO technique</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4">
+                        <a href="contact.html?service=web" class="bg-leadup-indigo text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700">
+                            Demander un devis
+                        </a>
+                        <a href="portfolio.html" class="border border-leadup-indigo text-leadup-indigo px-6 py-3 rounded-lg font-medium hover:bg-leadup-indigo/5">
+                            Voir nos réalisations
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-full h-64 md:h-80 bg-gradient-to-br from-leadup-indigo to-purple-600 rounded-2xl shadow-xl"></div>
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="text-3xl font-bold text-leadup-indigo">+40%</div>
+                            <div class="text-gray-600">de conversions en moyenne</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20" id="social">
+                <div class="order-2 md:order-1 flex justify-center">
+                    <div class="relative">
+                        <div class="w-full h-64 md:h-80 bg-gradient-to-br from-leadup-yellow to-orange-500 rounded-2xl shadow-xl"></div>
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="text-3xl font-bold text-leadup-yellow">+300%</div>
+                            <div class="text-gray-600">d'engagement social</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="inline-flex items-center px-4 py-2 bg-leadup-yellow/10 text-leadup-yellow rounded-full font-medium mb-4">
+                        <i class="fas fa-hashtag mr-2"></i> Gestion Sociale
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">Gestion des Réseaux Sociaux</h2>
+                    <p class="text-gray-600 mb-6">
+                        Nous développons et gérons votre présence sur les réseaux sociaux avec une stratégie de contenu personnalisée qui augmente votre visibilité et engagement.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Stratégie de contenu mensuelle</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Community management professionnel</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Campagnes publicitaires ciblées</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Analyse et reporting mensuel</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html?service=social" class="bg-leadup-indigo text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20" id="content">
+                <div>
+                    <div class="inline-flex items-center px-4 py-2 bg-leadup-indigo/10 text-leadup-indigo rounded-full font-medium mb-4">
+                        <i class="fas fa-pen-fancy mr-2"></i> Création de Contenu
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">Production de Contenu Digital</h2>
+                    <p class="text-gray-600 mb-6">
+                        Nous créons du contenu de qualité qui positionne votre marque comme une référence dans votre secteur et attire votre audience cible.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Articles de blog optimisés SEO</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Vidéos professionnelles</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Infographies et visuels engageants</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Newsletters et email marketing</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html?service=content" class="bg-leadup-indigo text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700">
+                        En savoir plus
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-full h-64 md:h-80 bg-gradient-to-br from-green-400 to-teal-500 rounded-2xl shadow-xl"></div>
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="text-3xl font-bold text-green-500">+5K</div>
+                            <div class="text-gray-600">visites mensuelles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="grid md:grid-cols-2 gap-12 items-center" id="strategy">
+                <div class="order-2 md:order-1 flex justify-center">
+                    <div class="relative">
+                        <div class="w-full h-64 md:h-80 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-2xl shadow-xl"></div>
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="text-3xl font-bold text-blue-500">+200%</div>
+                            <div class="text-gray-600">ROI digital</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="inline-flex items-center px-4 py-2 bg-leadup-yellow/10 text-leadup-yellow rounded-full font-medium mb-4">
+                        <i class="fas fa-chart-line mr-2"></i> Stratégie
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">Conseil & Stratégie Digitale</h2>
+                    <p class="text-gray-600 mb-6">
+                        Nous élaborons une stratégie digitale complète alignée avec vos objectifs business pour maximiser votre retour sur investissement.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Audit digital complet</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Plan stratégique sur 12 mois</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Accompagnement personnalisé</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-leadup-yellow mr-3"></i>
+                            <span>Formation de vos équipes</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html?service=strategy" class="bg-leadup-indigo text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-leadup-indigo text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Prêt à transformer votre entreprise<span class="text-leadup-yellow">?</span></h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Contactez-nous pour une consultation gratuite et découvrez comment nos services peuvent propulser votre croissance digitale.
+            </p>
+            <a href="contact.html" class="bg-leadup-yellow text-leadup-gray font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-400 inline-block">
+                <i class="fas fa-calendar-alt mr-2"></i> Prendre rendez-vous
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (identique à l'index) -->
+    <footer class="bg-leadup-gray text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-leadup-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">LD</span>
+                        </div>
+                        <span class="text-xl font-bold">LeadUp<span class="text-leadup-yellow">Digital</span></span>
+                    </a>
+                    <p class="text-leadup-light mb-6">
+                        Accompagnement stratégique pour entrepreneurs et dirigeants dans leur transformation digitale.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#web" class="text-leadup-light hover:text-leadup-yellow">Création de sites web</a></li>
+                        <li><a href="services.html#social" class="text-leadup-light hover:text-leadup-yellow">Gestion réseaux sociaux</a></li>
+                        <li><a href="services.html#content" class="text-leadup-light hover:text-leadup-yellow">Production de contenu</a></li>
+                        <li><a href="services.html#strategy" class="text-leadup-light hover:text-leadup-yellow">Conseil & stratégie</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-leadup-light hover:text-leadup-yellow">Accueil</a></li>
+                        <li><a href="about.html" class="text-leadup-light hover:text-leadup-yellow">À propos</a></li>
+                        <li><a href="portfolio.html" class="text-leadup-light hover:text-leadup-yellow">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-leadup-light hover:text-leadup-yellow">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">contact@leadupdigital.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-leadup-yellow mr-3 mt-1"></i>
+                            <span class="text-leadup-light">+33 1 23 45 67 89</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-10 pt-6 text-center text-leadup-light">
+                <p>&copy; <span id="currentYear"></span> LeadUp Digital. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
